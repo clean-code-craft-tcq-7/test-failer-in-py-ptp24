@@ -1,4 +1,4 @@
-from src.weatherreport import report
+from weatherreport import report
 
 
 def sensorStub():
