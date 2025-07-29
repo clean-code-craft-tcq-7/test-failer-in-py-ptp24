@@ -23,7 +23,7 @@ jobs:
 
     - name: tshirts fail
       if: always()
-      run: python tshirts.py
+      run: pytest test_tshirts.py
     
     - name: misaligned fail
       if: always()
