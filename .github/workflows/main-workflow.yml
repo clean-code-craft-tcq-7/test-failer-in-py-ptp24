@@ -23,12 +23,12 @@ jobs:
 
     - name: tshirts fail
       if: always()
-      run: pytest test_tshirts.py
+      run: pytest tests/unittests/test_tshirts.py
     
     - name: misaligned fail
       if: always()
-      run: pytest  test_misaligned.py
+      run: pytest  tests/unittests/test_misaligned.py
 
     - name: weather fail
       if: always()
-      run: pytest test_weatherreport.py
+      run: pytest tests/unittests/test_weatherreport.py
