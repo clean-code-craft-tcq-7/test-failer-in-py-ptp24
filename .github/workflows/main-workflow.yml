@@ -1,7 +1,7 @@
 # This workflow will install Python dependencies, run tests and lint with a single version of Python
 # For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
 
-name: Python application
+name: Python unit tests
 
 on: [push, pull_request]
 
@@ -23,12 +23,12 @@ jobs:
 
     - name: tshirts fail
       if: always()
-      run: python tshirts.py
+      run: pytest test_tshirts.py
     
     - name: misaligned fail
       if: always()
-      run: python misaligned.py
+      run: pytest test_misaligned.py
 
     - name: weather fail
       if: always()
-      run: python weatherreport.py
+      run: pytest test_weatherreport.py
