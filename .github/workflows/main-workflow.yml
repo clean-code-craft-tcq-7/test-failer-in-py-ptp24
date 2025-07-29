@@ -31,4 +31,4 @@ jobs:
 
     - name: weather fail
       if: always()
-      run: python weatherreport.py
+      run: pytest test_weatherreport.py
