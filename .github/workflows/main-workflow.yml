@@ -27,7 +27,7 @@ jobs:
     
     - name: misaligned fail
       if: always()
-      run: python misaligned.py
+      run: pytest  test_misaligned.py
 
     - name: weather fail
       if: always()
