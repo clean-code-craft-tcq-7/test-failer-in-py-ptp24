@@ -1,4 +1,4 @@
-from tshirts import size
+from src.tshirts import size
 
 
 def test_size_small():
