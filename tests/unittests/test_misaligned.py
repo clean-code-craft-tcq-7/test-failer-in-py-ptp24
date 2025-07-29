@@ -1,4 +1,4 @@
-from src.misaligned import calculate_color_code, print_color_map
+from misaligned import calculate_color_code, print_color_map
 
 # test_misaligned.py
 
